@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/first_fragment_item"
+        android:icon="@drawable/ic_icon_tales"
+        android:title="Tales"
+        >
+
+    </item>
+
+    <item
+        android:icon="@drawable/ic_icon_dish"
+        android:title="Kitchens"
+        android:id="@+id/second_fragment_item"
+        >
+    </item>
+
+    <item
+        android:icon="@drawable/ic_icon_dish"
+        android:title="Offers"
+        android:id="@+id/third_fragment_item"
+        >
+    </item>
+
+    <item
+        android:icon="@drawable/ic_icon_dish"
+        android:title="Offers"
+        android:id="@+id/fourth_fragment_item"
+        >
+    </item>
+
+
+</menu>
