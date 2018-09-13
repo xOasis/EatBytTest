@@ -5,17 +5,23 @@
     android:layout_height="match_parent">
 
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_above="@id/bottomNavigationView"
+        android:background="@drawable/bottom_shadow"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView" />
+
     <bd.com.xbit.eatbyttest.bottom_navigation
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="#fff"
-        android:elevation="16dp"
+        android:layout_height="65dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/bottom_navigation"
         app:itemTextColor="@drawable/bottom_selector"
+        app:elevation="25dp"
         />
 
 

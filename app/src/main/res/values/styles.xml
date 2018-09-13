@@ -8,4 +8,35 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="rtl_RecyclerTabLayout">
+        <item name="rtl_tabMinWidth">10dp</item>
+        <item name="rtl_tabMaxWidth">204dp</item>
+        <item name="rtl_tabIndicatorColor">@color/colorIndicator</item>
+        <item name="rtl_tabIndicatorHeight">3dp</item>
+        <item name="rtl_tabPaddingStart">40dp</item>
+        <item name="rtl_tabPaddingEnd">40dp</item>
+        <item name="rtl_tabPaddingBottom">15dp</item>
+        <item name="rtl_tabBackground">?attr/selectableItemBackground</item>
+        <item name="rtl_tabTextAppearance">@style/rtl_RecyclerTabLayout.Tab</item>
+        <item name="rtl_tabSelectedTextColor">?android:textColorPrimary</item>
+    </style>
+
+    <style name="rtl_RecyclerTabLayout.Tab">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <style name="selectedTabAppearance">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="textAllCaps">true</item>
+    </style>
+    <declare-styleable name="Tab">
+
+
+
+
+    </declare-styleable>
+
 </resources>
