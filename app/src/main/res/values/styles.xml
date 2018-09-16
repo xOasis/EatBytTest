@@ -6,6 +6,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/sofia_pro_regular</item>
     </style>
 
     <style name="rtl_RecyclerTabLayout">
@@ -15,7 +16,8 @@
         <item name="rtl_tabIndicatorHeight">3dp</item>
         <item name="rtl_tabPaddingStart">40dp</item>
         <item name="rtl_tabPaddingEnd">40dp</item>
-        <item name="rtl_tabPaddingBottom">15dp</item>
+        <item name="rtl_tabPaddingBottom">5dp</item>
+        <item name="rtl_tabPaddingTop">0dp</item>
         <item name="rtl_tabBackground">?attr/selectableItemBackground</item>
         <item name="rtl_tabTextAppearance">@style/rtl_RecyclerTabLayout.Tab</item>
         <item name="rtl_tabSelectedTextColor">?android:textColorPrimary</item>
