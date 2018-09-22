@@ -71,7 +71,7 @@
             >
         </FrameLayout>
 
-    <bd.com.xbit.eatbyttest.bottom_navigation
+    <bd.com.xbit.eatbyttest.LibraryClasses.bottom_navigation
         android:id="@+id/bottomNavigationViewTest"
         android:layout_width="match_parent"
         android:layout_height="65dp"

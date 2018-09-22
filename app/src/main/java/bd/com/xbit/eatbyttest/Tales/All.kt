@@ -1,6 +1,7 @@
 package bd.com.xbit.eatbyttest.Tales
 
 import android.os.Bundle
+import android.os.Handler
 import android.support.v4.app.Fragment
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
@@ -23,18 +24,26 @@ class All: Fragment() {
         recyclerView = layout.findViewById(R.id.tales_all_recyclerView)
         recyclerView.setHasFixedSize(false)
         recyclerView.isNestedScrollingEnabled = true
-        recyclerView.layoutManager = LinearLayoutManager(activity)
-        recyclerView.adapter = RecyclerAdpater(imageArray)
-
+        recyclerView.layoutManager = LinearLayoutManager(this!!.activity)
         return layout
 
     }
 
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
+    override fun onResume() {
+        super.onResume()
     }
 
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+
+    }
+
+    override fun onStart() {
+        super.onStart()
+        recyclerView.adapter = RecyclerAdpater(imageArray)
+
+    }
 
     companion object {
         fun newInstance(): All {
@@ -50,14 +59,12 @@ class All: Fragment() {
         }
 
         override fun getItemCount(): Int {
-            return imageArray.size
+          return imageArray.size
         }
 
         override fun onBindViewHolder(holder: RecyclerViewHolder, position: Int) {
-
-            //holder.textView!!.text = animals.get(position)
             Glide.with(holder.foodImage!!.context).load(imageArray[position]).into(holder.foodImage!!)
-
+            Glide.with(holder.foodImage!!.context).load(R.drawable.propic1).into(holder.propic!!)
         }
 
 
@@ -65,6 +72,7 @@ class All: Fragment() {
 
             //val textView = itemView?.findViewById<TextView>(R.id.tales_textView)
             val foodImage = itemView?.findViewById<ImageView>(R.id.list_post_food_id)
+            val propic = itemView?.findViewById<ImageView>(R.id.profile_image)
 
         }
 

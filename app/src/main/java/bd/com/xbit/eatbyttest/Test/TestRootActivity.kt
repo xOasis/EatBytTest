@@ -3,16 +3,14 @@ package bd.com.xbit.eatbyttest.Test
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
-import android.view.LayoutInflater
 import android.view.Menu
 import android.view.View
-import android.view.ViewGroup
 import bd.com.xbit.eatbyttest.Kitchen.RootKitchenFragment
 import bd.com.xbit.eatbyttest.Offers.RootOffersFragment
 import bd.com.xbit.eatbyttest.Profile.RootProfileFragment
 import bd.com.xbit.eatbyttest.R
 import bd.com.xbit.eatbyttest.Tales.RootTalesFragment
-import bd.com.xbit.eatbyttest.bottom_navigation
+import bd.com.xbit.eatbyttest.LibraryClasses.bottom_navigation
 
 class TestRootActivity: AppCompatActivity() {
 

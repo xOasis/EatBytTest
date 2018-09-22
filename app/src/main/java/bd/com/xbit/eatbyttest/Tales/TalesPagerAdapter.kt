@@ -3,12 +3,15 @@ package bd.com.xbit.eatbyttest.Tales
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentStatePagerAdapter
+import bd.com.xbit.eatbyttest.Tales.All
+import bd.com.xbit.eatbyttest.Tales.Ask
+import bd.com.xbit.eatbyttest.Tales.Reviews
 
 class TalesPagerAdapter(fm:FragmentManager) : FragmentStatePagerAdapter(fm){
 
     private val MAX_VALUE = 200
     private val fragmentNumber = 3
-    private val nammeFragmentArray = arrayOf("All","Reviews","Ask")
+    private val nameFragmentArray = arrayOf("All","Reviews","Ask")
 
     override fun getItem(position: Int): Fragment {
 
@@ -24,16 +27,16 @@ class TalesPagerAdapter(fm:FragmentManager) : FragmentStatePagerAdapter(fm){
             fragment = Ask.newInstance()
         }
 
+
         return fragment
     }
 
     override fun getCount(): Int {
         return fragmentNumber * MAX_VALUE
-        //return fragmentNumber
     }
 
     override fun getPageTitle(position: Int): CharSequence? {
-        return nammeFragmentArray[position%fragmentNumber]
+        return nameFragmentArray[position%fragmentNumber]
     }
 
 }

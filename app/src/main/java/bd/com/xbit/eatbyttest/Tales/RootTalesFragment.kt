@@ -1,7 +1,5 @@
 package bd.com.xbit.eatbyttest.Tales
 
-import android.content.Context
-import android.net.Uri
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
@@ -11,10 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 
 import bd.com.xbit.eatbyttest.R
-import bd.com.xbit.eatbyttest.Tab
-import com.nshmura.recyclertablayout.RecyclerTabLayout
-import kotlinx.android.synthetic.main.activity_root.view.*
-import kotlinx.android.synthetic.main.tales_root_fragment.*
+import bd.com.xbit.eatbyttest.LibraryClasses.Tab
 
 
 class RootTalesFragment : Fragment() {
@@ -24,8 +19,7 @@ class RootTalesFragment : Fragment() {
     lateinit var fm: FragmentManager
     //lateinit var recyclerTabLayout: RecyclerTabLayout
     lateinit var recyclerTabLayout: Tab
-    lateinit var tab:Tab
-
+    lateinit var tab: Tab
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -40,14 +34,21 @@ class RootTalesFragment : Fragment() {
 
         fm = this.fragmentManager!!
 
+        return layout
+    }
+
+    override fun onResume() {
+        super.onResume()
+    }
+
+
+    override fun onStart() {
+        super.onStart()
         viewPager = layout.findViewById(R.id.viewPager)
         viewPager.adapter = TalesPagerAdapter(fm)
         viewPager.currentItem = TalesPagerAdapter(fm).count/2
         recyclerTabLayout.setUpWithViewPager(viewPager)
-
-        return layout
     }
-
 
     companion object {
 

@@ -1,4 +1,4 @@
-package bd.com.xbit.eatbyttest;
+package bd.com.xbit.eatbyttest.LibraryClasses;
 
 /**
  * Copyright (C) 2015 nshmura
@@ -31,12 +31,13 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import bd.com.xbit.eatbyttest.R;
 
 public class Tab extends RecyclerView {
 
