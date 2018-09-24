@@ -23,13 +23,14 @@ import bd.com.xbit.eatbyttest.LibraryClasses.bottom_navigation
 
 class RootActivity : AppCompatActivity() {
 
-    lateinit var savedInstanceState: Bundle
+     var savedInstanceState: Bundle? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_root)
 
-        this.savedInstanceState = savedInstanceState!!
+        if(savedInstanceState != null )
+            this.savedInstanceState = savedInstanceState
 
         fullScreen()
         val bottomNavigation: bottom_navigation?                                  //this is a custom bottom_navigation_view url:https://github.com/ittianyu/BottomNavigationViewEx

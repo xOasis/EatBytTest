@@ -50,12 +50,9 @@ class RootKitchenFragment : Fragment() {
 
     }
 
-
     companion object {
             fun newInstance() : RootKitchenFragment {
-
                 return RootKitchenFragment()
-
             }
     }
 }
